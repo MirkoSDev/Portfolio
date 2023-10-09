@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(114, 111, 102);
+  color: rgb(240, 242, 231);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+
+.bannerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.banner h1 {
+  z-index: 1;
+  font-size: 4.5rem;
+  color: rgb(240, 242, 231);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: rgb(229, 214, 195);
+  border-top: solid 8px rgb(240, 242, 231);
+}
+
+.aboutMeTitleContainer h1 {
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(229, 214, 195);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.descriptionContainer {
+  width: 50%;
+}
+
+.diamondContainer {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamond1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  width: 70%;
+  transform: rotate(45deg);
+  border: solid 8px rgb(240, 242, 231);
+}
+
+.diamond2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  height: 88%;
+  background-color: rgb(184, 177, 167);
+  box-shadow: inset 0 0 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.diamond3 {
+  width: 75%;
+  height: 75%;
+  background-color: rgb(114, 111, 102);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 0 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.profilePic {
+  transform: rotate(-45deg);
+  width: 130%;
+}
+
+.technologiesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(184, 177, 167);
+  border-top: solid 8px rgb(240, 242, 231);
+  border-bottom: solid 8px rgb(240, 242, 231);
+}
+
+.technologiesContainer h1 {
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: rgb(184, 177, 167);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.technologieCard {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  background-color: rgb(229, 214, 195);
+  border-radius: 5px;
+}
+
+.logoContainer {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 242, 231);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.logo img {
+  width: 65%;
+}
+
+.cardDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.cardDescription h3,
+.cardDescription p {
+  padding: 0.3rem;
+}
